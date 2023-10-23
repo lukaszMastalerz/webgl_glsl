@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+html,
+body {
+  overflow: hidden;
+}
+.webglHH {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+h1 {
+  position: absolute;
+  top: 73%;
+  left: calc(50vw - 235px);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+  letter-spacing: 24px;
+  font-size: 30px;
+  color: white;
+  z-index: 1;
+}
+
+h2 {
+  position: absolute;
+  top: 81%;
+  left: calc(50vw - 170px);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+  letter-spacing: 6px;
+  font-size: 12px;
+  color: white;
+  z-index: 1;
+}
+h3 {
+  position: absolute;
+  top: 660px;
+  left: 1458px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 6px;
+  color: white;
+  z-index: 1;
+}
+
+svg {
+  position: absolute;
+  top: 620px;
+  left: 1450px;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    top: 62%;
+    left: calc(50vw - 100px);
+    font-size: 18px;
+    letter-spacing: 7px;
+  }
+  h2 {
+    top: 66%;
+    left: calc(50vw - 80px);
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  h3 {
+    position: absolute;
+    top: 600px;
+    left: calc(50vw + 108px);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 6px;
+  }
+  svg {
+    position: absolute;
+    top: 560px;
+    left: calc(50vw + 100px);
+    z-index: 1;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+.custom-cursor {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; /* Makes it a circle */
+  background-color: white;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.5s;
+}
+.scalable-cursor {
+  transform: scale(3); /* Scale the cursor */
+  transition: transform 0.5s; /* Only transition the transform property */
+}
